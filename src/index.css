@@ -1,0 +1,86 @@
+/* index.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2B2B2B; /* Darcula background color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #BABABA; /* Darcula default text color */
+}
+
+.TicTacToe {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    margin: 0;
+    color: #A9B7C6; /* Darcula title color */
+    font-weight: 600;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #3C3F41; /* Darcula cell background */
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #BABABA; /* Darcula default text color */
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #4E5255; /* Slightly lighter shade for hover */
+}
+
+.cell:active {
+    transform: scale(0.97);
+}
+
+.winner, 
+div[role="status"] {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E6E6E6; /* Lighter text for contrast */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4EAF50; /* Green color for the reset button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3E9E40; /* Darker shade of green for hover */
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(78, 175, 80, 0.3); /* Box shadow matching the button's color */
+}
