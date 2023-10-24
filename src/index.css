@@ -1,86 +1,48 @@
-/* index.css */
+/* Localized Darcula Theme CSS for helloReact Component */
 
-body {
+.helloReact {
     font-family: 'Arial', sans-serif;
-    background-color: #2B2B2B; /* Darcula background color */
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #BABABA; /* Darcula default text color */
-}
-
-.TicTacToe {
+    background-color: #2b2b2b;
+    color: #a9b7c6;
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 320px;
-}
-
-h1 {
-    margin: 0;
-    color: #A9B7C6; /* Darcula title color */
-    font-weight: 600;
-}
-
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    background: #3C3F41; /* Darcula cell background */
     border-radius: 5px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #BABABA; /* Darcula default text color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.helloReact:hover {
+    background-color: #3c3f41;
     cursor: pointer;
 }
 
-.cell:hover {
-    background: #4E5255; /* Slightly lighter shade for hover */
+.helloReact h1,
+.helloReact h2,
+.helloReact h3,
+.helloReact h4,
+.helloReact h5,
+.helloReact h6 {
+    color: #ffc66d;
 }
 
-.cell:active {
-    transform: scale(0.97);
+.helloReact a {
+    color: #6897bb;
+    text-decoration: none;
 }
 
-.winner, 
-div[role="status"] {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #E6E6E6; /* Lighter text for contrast */
+.helloReact a:hover {
+    text-decoration: underline;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #4EAF50; /* Green color for the reset button */
-    color: #ffffff;
+.helloReact button {
+    background-color: #3c3f41;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: #a9b7c6;
+    transition: all 0.3s ease;
+}
+
+.helloReact button:hover {
+    background-color: #4c4f51;
     cursor: pointer;
-}
-
-button:hover {
-    background: #3E9E40; /* Darker shade of green for hover */
-}
-
-button:active {
-    transform: scale(0.97);
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(78, 175, 80, 0.3); /* Box shadow matching the button's color */
 }

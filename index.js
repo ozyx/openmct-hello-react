@@ -1,11 +1,11 @@
-import TicTacToeViewProvider from './src/ticTacToeViewProvider';
+import HelloReactViewProvider from './src/helloReactViewProvider';
 
 export default function ReactFooPlugin(configuration) {
     return function install(openmct) {
-        openmct.types.addType('tic-tac-toe', {
-            name: 'Tic Tac Toe',
-            key: 'tic-tac-toe',
-            description: 'Let \'em play Tic Tac Toe',
+        openmct.types.addType('hello-react', {
+            name: 'Hello React',
+            key: 'hello-react',
+            description: 'Hello, React!',
             creatable: true,
             cssClass: 'icon-object',
             initialize: function (domainObject) {
@@ -14,6 +14,6 @@ export default function ReactFooPlugin(configuration) {
             form: []
         });
 
-        openmct.objectViews.addProvider(TicTacToeViewProvider(openmct));
+        openmct.objectViews.addProvider(HelloReactViewProvider(openmct));
     };
 }

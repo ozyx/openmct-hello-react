@@ -1,7 +1,7 @@
 {
-  "name": "openmct-react-tic-tac-toe",
+  "name": "openmct-hello-react",
   "version": "1.0.0",
-  "description": "Tic Tac Toe plugin for Open MCT using React",
+  "description": "Plugin for Open MCT that defines a stateless domain object in React",
   "main": "dist/bundle.js",
   "scripts": {
     "clean": "rm -rf dist/ node_modules/",

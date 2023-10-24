@@ -1,14 +1,14 @@
 import { createRoot } from 'react-dom/client';
 import { createElement } from 'react';
-import TicTacToeComponent from './TicTacToe.jsx';
+import HelloReact from './HelloReact.jsx';
 
-export default function TicTacToeViewProvider(openmct) {
+export default function HelloReactViewProvider(openmct) {
     return {
-        key: 'tic-tac-toe-view',
-        name: 'Tic Tac Toe View',
+        key: 'hello-react-view',
+        name: 'Hello React View',
         cssClass: 'icon-object',
         canView: function (domainObject) {
-            return domainObject.type === 'tic-tac-toe';
+            return domainObject.type === 'hello-react';
         },
         view: function () {
             let root;
@@ -16,7 +16,7 @@ export default function TicTacToeViewProvider(openmct) {
             return {
                 show: function (element) {
                     root = createRoot(element);
-                    root.render(createElement(TicTacToeComponent));
+                    root.render(createElement(HelloReact));
                 },
                 destroy: function (element) {
                     root.unmount();
